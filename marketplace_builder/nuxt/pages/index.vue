@@ -4,7 +4,7 @@ slug: /
 ---
 {%- assign description = 'Nuxt PlatformOS intergration' -%}
 
-{%- export name namespace: "pages_index" -%}
+{%- export description namespace: "pages_index" -%}
 </pos>
 
 <template>
@@ -14,7 +14,7 @@ slug: /
       <h1 class="title">
         {{ company }}
       </h1>
-      <h2 class="subtitle" :class="cssColor">
+      <h2 class="subtitle">
         {{ description }}
       </h2>
       <div class="links">
