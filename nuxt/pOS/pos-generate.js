@@ -10,7 +10,8 @@ module.exports = function(page) {
 
   
   // Set page file url without extension
-  const pageFile = ( page.path.replace('.html', '') )
+  let pageFile = ( page.path.replace('.html', '') )
+      pageFile = pageFile.replace(/\\/g,'/')
   
   // Load page HTML into Cheerio
   const $ = cheerio.load(page.html, { normalizeWhitespace: false, decodeEntities: false })
@@ -132,7 +133,7 @@ module.exports = function(page) {
   
   const jsonContent = '---' + jsonYAML + '---\n'
       + '{%- include "pages' + pageFile + '" -%}\n'
-      + '{{ context.exports.pages' + pageFile.replace(/\\/g, '\_') + ' | json }}'
+      + '{{ context.exports.pages' + pageFile.replace(/\//g, '\_') + ' | json }}'
 
 
   // WRTIE FILES TO marketplace_builder
