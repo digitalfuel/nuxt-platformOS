@@ -66,7 +66,7 @@ module.exports = merge({
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: (process.env.POS_ENV !== 'production') ? process.env.STAGING_URL + process.env.API_PREFIX : process.env.PROD_URL + process.env.API_PREFIX,
+    baseURL: (process.env.POS_ENV !== 'production') ? process.env.STAGING_URL + process.env.API_PREFIX : process.env.PRODUCTION_URL + process.env.API_PREFIX,
     proxy: (process.env.NODE_ENV !== 'production') ? true : false
   },
   proxy: [
@@ -87,7 +87,7 @@ module.exports = merge({
     /*
     ** You can extend webpack config here
     */
-    publicPath: (process.env.POS_ENV !== 'production') ? 'https://uploads' + process.env.STAGING_URL + '/instances/' + process.env.POS_INSTANCE + '/assets/_nuxt/' : 'https://uploads' + process.env.PROD_URL + '/instances/' + process.env.POS_INSTANCE + '/assets/_nuxt/',
+    publicPath: (process.env.POS_ENV !== 'production') ? process.env.STAGING_CDN + '/_nuxt/' : process.env.PRODUCTION_CDN + '/_nuxt/',
     extend(config, ctx) {
       /*
       ** Add support for pOS block
