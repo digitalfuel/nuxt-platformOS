@@ -2,9 +2,9 @@
 ---
 slug: /
 ---
-{%- assign description = 'PlatformOS Nuxt intergration' -%}
+{%- assign description = 'Nuxt PlatformOS intergration' -%}
 
-{% export name namespace: "pages_index" %}
+{%- export name namespace: "pages_index" -%}
 </pos>
 
 <template>
