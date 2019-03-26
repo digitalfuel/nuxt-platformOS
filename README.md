@@ -22,7 +22,7 @@ Nuxt integration into PlatformOS
    During nuxt installation:
    1. Choose between integrated server-side frameworks. **You must choose none**:
    - None (Nuxt default server)
-   1. Choose your favorite UI framework. **You are free to choose**:
+   2. Choose your favorite UI framework. **You are free to choose**:
    - None (feel free to add one later)
    - [Bootstrap](https://github.com/bootstrap-vue/bootstrap-vue)
    - [Vuetify](https://github.com/vuetifyjs/vuetify)
@@ -31,14 +31,14 @@ Nuxt integration into PlatformOS
    - [Element UI](https://github.com/ElemeFE/element)
    - [Ant Design Vue](https://github.com/vueComponent/ant-design-vue)
    - [Buefy](https://buefy.github.io/)
-   1. Choose your favorite testing framework. **Not tested best choice is currently none**:
+   3. Choose your favorite testing framework. **Not tested best choice is currently none**:
    - None (feel free to add one later)
    - [Jest](https://github.com/facebook/jest)
    - [AVA](https://github.com/avajs/ava)
-   1. The [Nuxt mode you want (](https://nuxtjs.org/guide/release-notes#better-spa-experience)[Universal](https://nuxtjs.org/guide/release-notes#better-spa-experience)[)](https://nuxtjs.org/guide/release-notes#better-spa-experience) **You must choose Universal**.
-   2. Add [axios module](https://github.com/nuxt-community/axios-module) to make HTTP request easily into your application. **You must choose yes to Axios**.
-   3. Add [EsLint](https://eslint.org/) to Lint your code on save. **You are free to choose**.
-   4. Add [Prettier](https://prettier.io/) to prettify your code on save. **You are free to choose**.
+   4. The [Nuxt mode you want (](https://nuxtjs.org/guide/release-notes#better-spa-experience)[Universal](https://nuxtjs.org/guide/release-notes#better-spa-experience)[)](https://nuxtjs.org/guide/release-notes#better-spa-experience) **You must choose Universal**.
+   5. Add [axios module](https://github.com/nuxt-community/axios-module) to make HTTP request easily into your application. **You must choose yes to Axios**.
+   6. Add [EsLint](https://eslint.org/) to Lint your code on save. **You are free to choose**.
+   7. Add [Prettier](https://prettier.io/) to prettify your code on save. **You are free to choose**.
    
 2. Download the nuxt-platformOS zip and copy the files into your project. Choose to replace files if asked.
 3. Update package.json adding the config and scripts below.
