@@ -20,7 +20,7 @@ module.exports = {
       { name: "csrf-token", content: "{{ context.authenticity_token }}" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '~assets/_nuxt/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: "{{ 'favicon.ico' | asset_url }}" }
     ]
   },
 
